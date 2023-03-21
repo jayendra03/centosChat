@@ -1,0 +1,284 @@
+
+/*css for chat list */
+.chatlist .panel{ margin-bottom: 0;}
+.chatlist{ width: 200px; position: fixed; overflow-y: auto; bottom: 0; left: 10px;
+          -webkit-transform: translateX(400px);
+            -moz-transform: translateX(400px);
+            -ms-transform: translateX(400px);
+            -o-transform: translateX(400px);
+            transform: translateX(400px);
+            -webkit-transition: all 500ms ease-in 300ms;
+            -moz-transition: all 500ms ease-in 300ms;
+            transition:all 500ms ease-in 300ms;}
+.showchatlist.chatlist{
+     -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+} 
+.chatlist ul li a {
+  display: block;
+  font-size: 12px;
+  padding: 10px 0;
+  text-decoration: none;
+}
+.chatlist ul li a img{ 
+    display: inline-block;
+    vertical-align: bottom;
+    width: 25px;
+}   
+.chatlist ul li a span {
+  display: block;
+  float: right;
+  margin-top: 2px;
+}  
+.chatlist ul li.online a span{
+    color: #d39500
+} 
+.chat_box {
+  width: 300px;
+  /*display: none;*/
+  /*float: right;*/
+  float: left;
+  margin-right: 10px;
+}  
+.chat .chat-img img {
+  width: 40px;
+} 
+.chatlist .panel-heading{ position: relative}
+.chatlist .panel-heading .close_chat_list{ 
+    display: block;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right: 0;
+    top:10px;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.list_uesr{
+	border-bottom: 1px solid #ccc;
+    padding: 0 15px;
+}	
+
+.panel-body {
+    padding: 0px;
+}
+
+
+/* Start 10-07-2016 */
+
+/* User Chat Section */
+
+/*css for chat box only*/
+.chat_wrapper{ position: absolute;
+                /*width: 100%;*/
+                height: 300px;
+                bottom: 0;
+                /*left: 0;*/
+                /*padding-right:210px;*/
+                margin-left: 230px;
+              }
+.chat_wrapper .panel{ margin-bottom: 0;}
+.chat
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.chat li
+{
+    /*margin-bottom: 10px;*/
+    padding-bottom: 5px;
+    /*border-bottom: 1px dotted #B3A9A9;*/
+}
+
+.chat li.left .chat-body
+{
+    margin-left: 20px;
+}
+
+.chat li.right .chat-body
+{
+    margin-right: 20px;
+}
+
+
+.chat li .chat-body p
+{
+    margin: 5px 0 0 0;
+    color: #777777;
+    font-size: 12px;
+}
+.chat .right .chat-body p{
+    text-align: right;
+    float: right;
+    border-radius: 5px;
+    /* border: 1px solid #ccc; */
+    padding: 5px;
+    background-color: #dff0d8;
+}
+
+.chat .left .chat-body p {
+    background-color: #adadad;
+    float: left;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.chat_box .panel .slidedown .glyphicon, .chat .glyphicon
+{
+    margin-right: 5px;
+}
+
+.chat_box .panel-body
+{
+    overflow-y: scroll;
+    height: 200px;
+}
+
+::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #555;
+}
+
+.main_body{
+  position:relative;
+}
+
+/* 11-07-2016 strat */
+
+.chat .new_user_group{
+  border-top: 1px dotted #B3A9A9;
+  padding-top: 10px;
+}
+
+.chat li .header strong {
+  display: none;
+}
+
+.chat .chat-body .pull-right {
+    margin-right: 10px;
+}
+
+.chat .right .text-muted {
+  margin-left: 10px;
+}
+
+.message_box{
+  width: 100%;
+}
+
+/* 12-07-2016  */
+.chat_action span {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.chat_action i {
+    font-size: 17px;
+}
+
+/* Video Call section */
+
+/* Caller Model */
+
+.caller_section {
+  float: left;
+  width: 80%;
+}
+
+.endCall {
+  float: right;
+  text-align: right;
+  width: 20%;
+}
+
+.groupAdminCallModel .modal-body {
+  height: 70px;
+  margin-top: 15px;
+}
+
+.caller_name {
+  font-size: 20px;
+}
+
+.caller_tune {
+  margin-left: 50px;
+}
+
+.endCallAdmin {
+  background-color: red;
+  border-radius: 100px;
+  display: block;
+  float: right;
+  margin-top: -5px;
+  padding: 10px;
+  text-align: center;
+  width: 45px;
+}
+
+.endCall i {
+  color: white;
+  font-size: 20px;
+}
+
+/* Receiver Model  */
+
+.chatAction {
+  float: right;
+  text-align: right;
+  width: 20%;
+}
+
+.chatAction a {
+  border-radius: 100px;
+  display: block;
+  float: right;
+  margin-top: -5px;
+  padding: 10px;
+  text-align: center;
+  width: 45px;
+  margin-left: 10px;
+}
+
+.acceptButton {
+  background-color: green;
+}
+
+.rejectButton {
+  background-color: red;
+}
+
+.groupCallModel .modal-body {
+  height: 70px;
+  margin-top: 15px;
+}
+
+.chatAction a i {
+  color: white;
+  font-size: 20px;
+}
+
+audio {
+  display: none;
+}
